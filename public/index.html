@@ -1,18 +1,65 @@
-<script>
-    function go() {
-        var input = document.getElementById('url-target');
-        if (input.value) {
-            window.location.href = '/main/' + input.value;
-        } else {
-            alert('Please enter a valid URL without the https:// prefix. For example: www.example.com.');
-        }
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    var searchBox = document.getElementById("url-target");
-    searchBox.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("search-form").submit();
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+    <title>Proxy Star Productions</title>
+    <style>
+        /* CSS for the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
         }
-    });
-</script>
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="games.html">Games</a></h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h1>Proxy Star Bypasser</h1>
+            <p class="description">Enter a URL below to bypass:</p>
+            <form class="input-form" onsubmit="go(); return false;">
+                <input class="url-input" type='text' placeholder='https://www.google.com' id='url-target'
+                    onkeydown='if(event.key==="Enter") go()' />
+                <button type="submit" class="go-button">Go</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function go() {
+            var input = document.getElementById('url-target');
+            if (input.value) {
+                window.location.href = '/main/' + input.value;
+            } else {
+                alert('Please enter a valid URL without the https:// prefix. For example: www.example.com.');
+            }
+        }
+    </script>
+</body>
+
+</html>
