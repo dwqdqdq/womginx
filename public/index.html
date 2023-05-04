@@ -7,8 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/png" href="logo.png" />
     <title>Proxy Star Productions</title>
     <style>
@@ -31,6 +29,34 @@
             text-decoration: none;
             color: #fff;
         }
+
+        /* CSS for the search box */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-box {
+            border: none;
+            border-radius: 4px 0 0 4px;
+            padding: 10px;
+            font-size: 16px;
+            width: 50%;
+            outline: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .search-button {
+            background-color: #333;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 0 4px 4px 0;
+            outline: none;
+        }
     </style>
 </head>
 
@@ -43,9 +69,10 @@
             <h1>Proxy Star Bypasser</h1>
             <p class="description">Enter a URL below to bypass:</p>
             <form class="input-form" onsubmit="go(); return false;">
-                <input class="url-input" type='text' placeholder='https://www.google.com' id='url-target'
-                    onkeydown='if(event.key==="Enter") go()' />
-                <button type="submit" class="go-button">Go</button>
+                <div class="search-container">
+                    <input class="search-box" type="search" id="url-target" placeholder="Search...">
+                    <button type="submit" class="search-button"><i class="material-icons">search</i></button>
+                </div>
             </form>
         </div>
     </div>
