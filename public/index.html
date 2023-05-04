@@ -14,28 +14,28 @@
 </head>
 
 <body>
-        <div>
-            <script>
-                function go() {
-                    var input = document.getElementById('url-target');
-                    if (input.value) {
-                        window.location.href = '/main/' + input.value;
-                    } else {
-                        alert('Please provide a link. It does not require https://.');
-                    }
-                }
-            </script>
-            <span class="w3-xmedium">Input your URL here: </span>
-            <div>
-                <input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target'
+    <div class="container">
+        <div class="form-container">
+            <h1>Proxy Star Productions</h1>
+            <p class="description">Enter a URL below to access:</p>
+            <div class="input-container">
+                <input class="url-input" type='text' placeholder='https://www.google.com' id='url-target'
                     onkeydown='if(event.key==="Enter") go()' />
-                <button onclick='go()' class="w3-xlarge">Go!</button>
+                <button onclick='go()' class="go-button">Go!</button>
             </div>
-            <br>
-            <br>
-            </p>
         </div>
     </div>
+
+    <script>
+        function go() {
+            var input = document.getElementById('url-target');
+            if (input.value) {
+                window.location.href = '/main/' + input.value;
+            } else {
+                alert('Please provide a link. It does not require https://.');
+            }
+        }
+    </script>
 </body>
 
 </html>
