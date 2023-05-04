@@ -35,14 +35,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
         }
 
         .search-box {
             border: none;
-            border-radius: 4px 0 0 4px;
+            border-radius: 5px;
             padding: 10px;
             font-size: 16px;
-            width: 50%;
+            width: 70%;
             outline: none;
             font-family: 'Roboto', sans-serif;
         }
@@ -54,8 +58,29 @@
             cursor: pointer;
             padding: 10px;
             font-size: 16px;
-            border-radius: 0 4px 4px 0;
+            border-radius: 0 5px 5px 0;
             outline: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .search-button:hover {
+            background-color: #444;
+        }
+
+        .search-icon {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -moz-font-feature-settings: 'liga';
+            -moz-osx-font-smoothing: grayscale;
         }
     </style>
 </head>
@@ -68,25 +93,5 @@
         <div class="form-container">
             <h1>Proxy Star Bypasser</h1>
             <p class="description">Enter a URL below to bypass:</p>
-            <form class="input-form" onsubmit="go(); return false;">
-                <div class="search-container">
-                    <input class="search-box" type="search" id="url-target" placeholder="Search...">
-                    <button type="submit" class="search-button"><i class="material-icons">search</i></button>
-                </div>
-            </form>
-        </div>
-    </div>
+            <form class="input-form" onsubmit="go(); return
 
-    <script>
-        function go() {
-            var input = document.getElementById('url-target');
-            if (input.value) {
-                window.location.href = '/main/' + input.value;
-            } else {
-                alert('Please enter a valid URL without the https:// prefix. For example: www.example.com.');
-            }
-        }
-    </script>
-</body>
-
-</html>
