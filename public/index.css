@@ -1,12 +1,5 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu";
     font-size: 25px;
     text-align: center;
     background-color: #FFFFFF;
@@ -14,7 +7,7 @@ body {
 
 .container {
     margin-top: 10%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu";
     font-size: 50px;
     color: #FFF;
     background-color: #1c9a54;
@@ -32,7 +25,7 @@ body {
     width: 100%;
     height: 28px;
     border: solid 1px #FFF;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu";
     font-size: 16px;
     color: #eee;
     padding: 8px 0px;
@@ -47,7 +40,7 @@ body {
     width: 100%;
     height: 28px;
     border: solid 1px #0066ff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu";
     font-size: 16px;
     color: #0066ff;
     padding: 8px 0px;
@@ -69,7 +62,7 @@ body {
     color: #ddd;
     border: 0;
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu";
     font-size: 17px;
     transition: 0.3s;
 }
