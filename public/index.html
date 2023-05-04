@@ -18,12 +18,17 @@
         <div class="form-container">
             <h1>Proxy Star Productions</h1>
             <p class="description">Enter a URL below to access:</p>
-            <div class="input-container">
-                <input class="url-input" type='text' placeholder='Press enter to go to a website.' id='url-target'
+            <form class="input-form" onsubmit="go(); return false;">
+                <input class="url-input" type='text' placeholder='https://www.google.com' id='url-target'
                     onkeydown='if(event.key==="Enter") go()' />
-            </div>
+                <button type="submit" class="go-button">Go</button>
+            </form>
         </div>
     </div>
+
+    <footer>
+        <p class="footer-text">Customize this text in the HTML code.</p>
+    </footer>
 
     <script>
         function go() {
