@@ -1,1 +1,100 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Links</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        .quick-links {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .quick-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            background-color: #e8e8e8;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: all 0.2s ease-in-out;
+            transform: translate3d(0,0,0);
+            position: relative;
+        }
+        .quick-links a:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            z-index: -1;
+            transform: translate3d(0,50px,0);
+            transition: transform 0.2s ease-in-out;
+        }
+        .quick-links a:hover {
+            background-color: #f7dfad;
+            color: #fff;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            transform: translate3d(0,-5px,0);
+        }
+        .quick-links a:hover:before {
+            transform: translate3d(0,0,0);
+        }
+        .quick-links a > div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quick-links a > div > span {
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="quick-links">
+        <a href="#">
+            <div>
+                <span>Snowball.io</span>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <span>Basket Random</span>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <span>Cookie Clicker</span>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <span>Electron Dash</span>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <span>Paper.io</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
