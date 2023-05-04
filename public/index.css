@@ -9,8 +9,9 @@
 .form-container {
   max-width: 600px;
   width: 100%;
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack items vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
   padding: 2rem;
   background-color: #FFFFFF;
@@ -48,7 +49,6 @@ button[type="submit"]:hover {
 }
 
 .image-container {
-  order: -1; /* Move the image container to the top */
   margin-bottom: 2rem;
 }
 
