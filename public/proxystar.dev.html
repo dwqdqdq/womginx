@@ -86,24 +86,10 @@ body {
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
   <div class="search-container">
-    <form action="/action_page.php">
+    <form action="/main/' + input.value">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
                   </form>
-        </div>
-    </div>
-
-    <script>
-        function go() {
-            var input = document.getElementById('url-target');
-            if (input.value) {
-                window.location.href = '/main/' + input.value;
-            } else {
-                alert('Please enter a valid URL without the https:// prefix. For example: www.example.com.');
-            }
-    </form>
-  </div>
-</div>
 
 <div style="padding-left:16px">
   <h2>Responsive Search Bar</h2>
@@ -113,4 +99,3 @@ body {
 
 </body>
 </html>
-
